@@ -123,7 +123,7 @@ a {
 .grid_container {
   display: grid;
   gap: 10px;
-  grid-template: "header"  100px "navbar"  50px "main"    auto "footer"  100px; }
+  grid-template: "header"  100px "navbar"  50px "main"    auto "footer"  200px; }
 
 /* config Responsive */
 @media (min-width: 320px) {
@@ -249,8 +249,21 @@ a {
 
 .footer {
   grid-area: footer;
-  background: linear-gradient(#b10202, transparent), linear-gradient(90deg, #883200, transparent), linear-gradient(-90deg, #991f01, transparent);
-  background-blend-mode: screen; }
+  background: linear-gradient(#001a07, transparent), linear-gradient(90deg, black, transparent), linear-gradient(-90deg, #585858, transparent);
+  background-blend-mode: screen;
+  height: 200px;
+  padding-top: 60px; }
+  .footer .fab {
+    margin: 20px 20px 30px 20px;
+    filter: drop-shadow(0 2px 2px rgba(255, 195, 195, 0.7)); }
+  .footer .fa-facebook {
+    color: blue; }
+  .footer .fa-instagram {
+    color: white; }
+  .footer .fa-youtube {
+    color: red; }
+  .footer .fa-whatsapp {
+    color: #02bb02; }
 
 /* Codigo del Formulario */
 @media (min-width: 700px) {
