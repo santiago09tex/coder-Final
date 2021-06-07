@@ -11,7 +11,7 @@ h1, h2, h3, h4, p {
 .title-red {
   background-color: red; }
 
-.title-yellow {
+.title-#02bb02 {
   background-color: yellow; }
 
 .title-white {
@@ -71,7 +71,7 @@ img {
 .main__buttons {
   display: inline-block;
   text-decoration: none;
-  color: yellow;
+  color: #02bb02;
   background-color: red;
   border-radius: 20px;
   margin: 10px 0 50px 0;
@@ -83,14 +83,15 @@ h1 {
   text-align: center;
   font-size: 1rem;
   padding: 100px 0 0 0px !important;
-  color: yellow;
-  text-shadow: 2px 2px 2px black;
+  color: white;
+  text-shadow: 5px 2px 5px black;
   z-index: 665; }
 
 h2 {
   padding: 10px 0 10px 0;
   text-align: center;
-  text-shadow: 2px 2px 2px black;
+  color: red;
+  text-shadow: 5px 2px 5px black;
   font-size: 1.8; }
 
 h3 {
@@ -170,7 +171,7 @@ a {
     .header .navbar .header__logo {
       width: 6%;
       margin: 1%;
-      border: 5px solid #50a700;
+      border: 5px solid rgba(1, 113, 0, 0.75);
       border-radius: 70%;
       position: static;
       float: left; }
@@ -179,30 +180,34 @@ a {
       margin-left: 20px; }
       .header .navbar li a {
         align-items: center;
-        border: solid 3px #ffffff;
         border-radius: 70%;
-        background-color: #50a700;
+        background-color: rgba(2, 113, 0, 0.212);
         text-decoration: none;
         font-style: oblique;
-        color: #ffffff;
+        color: rgba(1, 113, 0, 0.75);
         font-size: 1rem;
         cursor: pointer;
         margin: 10px;
         z-index: 1;
-        position: relative; }
+        position: relative;
+        box-shadow: 0px 10px 30px -7px rgba(1, 113, 0, 0.75);
+        -webkit-box-shadow: 0px 10px 30px -7px rgba(1, 113, 0, 0.75);
+        -moz-box-shadow: 0px 10px 30px -7px rgba(1, 113, 0, 0.75); }
         .header .navbar li a:hover {
           background-color: red;
-          border: solid 3px #50a700; }
+          border: solid 3px rgba(1, 113, 0, 0.75); }
   .header .carousel__my {
     position: relative; }
 
 .navbar-toggler {
-  background-color: red !important; }
+  background-color: #02bb02 !important; }
 
 .main {
   grid-area: main;
   padding: 6% 0 6% 0;
   background: white; }
+  .main .bg-gradient {
+    background-color: rgba(14, 87, 0, 0.534); }
   .main .main__Varios {
     display: flex;
     flex-direction: row;
@@ -309,11 +314,11 @@ form p {
       width: 100%;
       border: 0; }
     .form form label:hover, .form form label:focus {
-      background: yellow;
+      background: #02bb02;
       outline: 0; }
   .form input:focus,
   .form textarea:focus {
-    outline: 3px solid yellow; }
+    outline: 3px solid #02bb02; }
   .form input,
   .form textarea,
   .form button {
