@@ -218,16 +218,8 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly; }
     .main .main__Varios .main__Borde {
-      background-color: black;
-      border-color: transparent;
-      animation: pulse 15s infinite;
-      animation-direction: alternate-reverse; }
-
-@keyframes pulse {
-  0% {
-    background-color: white; }
-  100% {
-    background-color: red; } }
+      border-radius: 50%;
+      border: 2px solid rgba(0, 0, 0, 0.822); }
   .main .main_img {
     width: 50%; }
   .main .main__subcripcion {
