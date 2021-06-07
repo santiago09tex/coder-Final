@@ -66,6 +66,8 @@ body {
 img {
   width: 300px;
   height: auto;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.712);
+  margin-bottom: 20px;
   transition: 1.0s; }
 
 .main__buttons {
@@ -89,9 +91,10 @@ h1 {
 
 h2 {
   padding: 10px 0 10px 0;
+  padding: 50px 0 30px 0;
   text-align: center;
-  color: red;
-  text-shadow: 5px 2px 5px black;
+  color: black;
+  text-shadow: 5px 2px 5px #afafaf;
   font-size: 1.8; }
 
 h3 {
@@ -225,6 +228,8 @@ a {
   .main .main__subcripcion {
     padding-left: 30%;
     width: 70%; }
+  .main .main__carrousel {
+    padding: initial; }
   .main .productos ul {
     display: flex;
     justify-content: space-evenly; }
