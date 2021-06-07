@@ -73,9 +73,10 @@ img {
 .main__buttons {
   display: inline-block;
   text-decoration: none;
+  width: 150px;
   color: #02bb02;
+  border-radius: 200% 200% 50% 50%;
   background-color: red;
-  border-radius: 20px;
   margin: 10px 0 50px 0;
   padding: 10px; }
 
@@ -216,6 +217,7 @@ a {
   .main .bg-gradient {
     background-color: rgba(14, 87, 0, 0.534); }
   .main .main__Varios {
+    margin: 5% 0 5% 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -230,6 +232,11 @@ a {
     width: 70%; }
   .main .main__carrousel {
     padding: initial; }
+  .main aside {
+    background-color: rgba(42, 83, 0, 0.336);
+    border-radius: 15% 15% 0 0;
+    padding: 0 0 5% 0;
+    margin-top: 5%; }
   .main .productos ul {
     display: flex;
     justify-content: space-evenly; }
@@ -243,13 +250,17 @@ a {
         font-size: 1rem;
         cursor: pointer;
         position: relative; }
+  .main .fa-map-marked-alt {
+    color: red;
+    padding: 5% 0 10% 0; }
 
 .footer {
   grid-area: footer;
   background: linear-gradient(#001a07, transparent), linear-gradient(90deg, black, transparent), linear-gradient(-90deg, #585858, transparent);
   background-blend-mode: screen;
   height: 200px;
-  padding-top: 60px; }
+  padding-top: 60px;
+  text-decoration: none; }
   .footer .fab {
     margin: 20px 20px 30px 20px;
     filter: drop-shadow(0 2px 2px rgba(255, 195, 195, 0.7)); }
