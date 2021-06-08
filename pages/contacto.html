@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <script src="https://kit.fontawesome.com/0f1c95da32.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
   <title>Polleria La Familia</title>
-  
+
 </head>
+
 <body class="grid_container">
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-gradient-danger">
@@ -97,89 +101,120 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-        <div class="contain">
+    <div class="contain">
 
-            <div class="wrapper">
-              <div class="contacts">
-                <h3 class="contactsYou">Nuestro Contacto</h3>
-          
-                <ul>
-                  <li>San Luis Del Palmar. Corrientes </li>
-                  <li>3794012180</li>
-                  <li>santitex09@gmail.com</li>
-                </ul>
-              </div>
+      <div class="wrapper">
+        <div class="contacts">
+          <h2 class="contactsYou">Nuestro Contacto</h2>
+        <div>
+          <ul>
+            <li>San Luis Del Palmar. Corrientes </li>
+            <li>3794012180</li>
+            <li>santitex09@gmail.com</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/SantitexCreaciones/">
+                <i class="fab fa-facebook"></i>
+                santitexcreaciones
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/SantitexCreaciones/">
+                <i class="fab fa-instagram"></i>
+                SantitexCreaciones
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCANko5D_3UOAOSuUGCKbDow">
+                <i class="fab fa-youtube"></i>
+                SantiTex
+              </a>
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=543794012180">
+                +543794012180
+              <i class="fab fa-whatsapp title-green">
+                
+              </i></a>
+              
+            </li>
+          </ul>
+        </div>
+        </div>
         <!-- Formulario -->
         <div class="form">
-            <h2>Contacto</h2>
-        <form action="https://formsubmit.co/el/cagehu" method="POST" enctype="multipart/form-data">
+          <h3>Contacto</h3>
+          <form action="https://formsubmit.co/el/cagehu" method="POST" enctype="multipart/form-data">
             <fieldset>
-                <legend>INGRESE SUS DATOS</legend>
-                <label>
-                    Nombre
-                    <input type="text" name="Nombre" id="name" required>
-                </label>
-                <label>
-                    Email
-                    <input type="email" placeholder="Ejemplo@gmail.com" id="email" required>
-                </label>
-                <br><br>
-                <label>
-                    Telefono
-                    <input type="number" id="phone" required>
-                </label>
-                <label>
-                    Asunto
-                    <input type="text" id="affair">
-                </label>
-                <br><br>
-                <label>
-                    Mensaje
-                    <br>
-                    <textarea name="mensaje" id="message" cols="55" rows="10"
-                        placeholder="Describa su Peticion"></textarea>
-                </label>
+              <legend>INGRESE SUS DATOS</legend>
+              <label>
+                Nombre
+                <input type="text" name="Nombre" id="name" required>
+              </label>
+              <label>
+                Email
+                <input type="email" placeholder="Ejemplo@gmail.com" id="email" required>
+              </label>
+              <br><br>
+              <label>
+                Telefono
+                <input type="number" id="phone" required>
+              </label>
+              <label>
+                Asunto
+                <input type="text" id="affair">
+              </label>
+              <br><br>
+              <label>
+                Mensaje
                 <br>
-                <label for="genero">Genero</label>
-                <Select name="genero">
-                    <option value="M">Masculino</option>
-                    <option value="F">Femenino</option>
-                    <option value="O">Otro Genero</option>
-                </Select>
-                <label for="checkbox">Novedades</label>
-                <input type="checkbox" id="check">
-                <button type="reset">Recetear</button>
-                <input type="submit" value="Enviar">
+                <textarea name="mensaje" id="message" cols="55" rows="10" placeholder="Describa su Peticion"></textarea>
+              </label>
+              <br>
+              <label for="genero">Genero</label>
+              <Select name="genero">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+                <option value="O">Otro Genero</option>
+              </Select>
+              <label for="checkbox">Novedades</label>
+              <input type="checkbox" id="check">
+              <button type="reset">Recetear</button>
+              <input type="submit" value="Enviar">
             </fieldset>
-        </form>
+          </form>
+        </div>
+  </main>
+  <!-- Pie de pagina -->
+  <footer class="footer">
+    <div>
+      <p><i> SantiTEX 2021 Copyright © Todos los Derechos Recerbados</i></p>
     </div>
-    </main>
-    <!-- Pie de pagina -->
-    <footer class="footer">
-      <div>
-        <p><i> SantiTEX 2021 Copyright © Todos los Derechos Recerbados</i></p>
-      </div>
-      <div>
-        web alojada en <strong>000webhost</strong> 
-      </div>
-      <div>
-        <a href="https://www.facebook.com/SantitexCreaciones/">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.facebook.com/SantitexCreaciones/">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCANko5D_3UOAOSuUGCKbDow">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=543794012180">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </div>
-    </footer>
+    <div>
+      web alojada en <strong>000webhost</strong>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/SantitexCreaciones/">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.facebook.com/SantitexCreaciones/">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UCANko5D_3UOAOSuUGCKbDow">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=543794012180">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

@@ -9,16 +9,19 @@ h1, h2, h3, h4, p {
   text-shadow: 2px 2px 2px black; }
 
 .title-red {
-  background-color: red; }
+  color: red; }
 
 .title-#02bb02 {
-  background-color: yellow; }
+  color: #02bb02; }
 
 .title-white {
-  background-color: white; }
+  color: white; }
+
+.title-blue {
+  color: blue; }
 
 .title-black {
-  background-color: black; }
+  color: black; }
 
 .spacer-10 {
   border: 10px solid; }
@@ -308,13 +311,15 @@ form p {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1em; }
+  padding: 1em;
+  margin-top: 30px;
+  width: 100%; }
   .contain .contacts {
-    background: red;
+    background: linear-gradient(90deg, black, transparent), linear-gradient(black, transparent);
     height: 1088px;
     color: white; }
     .contain .contacts .contactsYou {
-      color: white; }
+      color: #02bb02; }
       .contain .contacts .contactsYou h3,
       .contain .contacts .contactsYou ul {
         margin: 0; }
@@ -328,7 +333,7 @@ form p {
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
 
 .form {
-  background: white; }
+  background: linear-gradient(rgba(13, 184, 59, 0.308), transparent), linear-gradient(90deg, rgba(114, 114, 114, 0.548), transparent), linear-gradient(-90deg, rgba(88, 88, 88, 0.479), transparent); }
   .form form label {
     display: block; }
     .form form label button,
@@ -349,7 +354,8 @@ form p {
   .form textarea,
   .form button {
     width: 100%;
-    border: 1px solid #000; }
+    border: 1px solid #000;
+    border-radius: 5%; }
 
 /* grid tabla */
 .cont {
