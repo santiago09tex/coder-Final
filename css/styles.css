@@ -86,8 +86,9 @@ h1 {
   text-align: center;
   font-size: 1rem;
   padding: 100px 0 0 0px !important;
-  color: white;
-  text-shadow: 5px 2px 5px black;
+  border-radius: 50px;
+  text-shadow: 2px 2px 0 #0f4d00, 2px -2px 0 #00471e, -2px 2px 0 #015e18, -2px -2px 0 #003600, 2px 0px 0 #000000, 0px 2px 0 #135a13, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 2px 2px rgba(0, 0, 0, 0);
+  color: #ebdb00;
   z-index: 665; }
 
 h2 {
@@ -158,11 +159,10 @@ a {
 
 .header {
   grid-area: header;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: justify;
-  overflow: hidden; }
+  height: 100px;
+  background-image: url(../img/pared.png);
+  background-position: top;
+  background-size: 100%; }
   .header .navbar {
     grid-area: navbar;
     position: fixed !important;
@@ -171,7 +171,7 @@ a {
     padding: 0 50px 0 0;
     z-index: 669;
     padding-top: 10px;
-    margin: -10px -10px 0 -10px; }
+    margin: 0 -10px 0 -10px; }
     .header .navbar .my_toggler {
       background-color: red; }
     .header .navbar .header__logo {
@@ -210,9 +210,10 @@ a {
 
 .main {
   grid-area: main;
-  padding: 6% 0 6% 0;
-  background-image: url(../img/Pared.jpg);
-  background-size: 100%;
+  padding: 0 0 6% 0;
+  background-image: url(../img/pared.png);
+  background-repeat: no-repeat;
+  background-size: 110%;
   background-position: bottom; }
   .main .bg-gradient {
     background-color: rgba(14, 87, 0, 0.534); }
