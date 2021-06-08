@@ -66,14 +66,17 @@ body {
 img {
   width: 300px;
   height: auto;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.712);
+  margin-bottom: 20px;
   transition: 1.0s; }
 
 .main__buttons {
   display: inline-block;
   text-decoration: none;
+  width: 150px;
   color: #02bb02;
+  border-radius: 200% 200% 50% 50%;
   background-color: red;
-  border-radius: 20px;
   margin: 10px 0 50px 0;
   padding: 10px; }
 
@@ -83,15 +86,17 @@ h1 {
   text-align: center;
   font-size: 1rem;
   padding: 100px 0 0 0px !important;
-  color: white;
-  text-shadow: 5px 2px 5px black;
+  border-radius: 50px;
+  text-shadow: 2px 2px 0 #0f4d00, 2px -2px 0 #00471e, -2px 2px 0 #015e18, -2px -2px 0 #003600, 2px 0px 0 #000000, 0px 2px 0 #135a13, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 2px 2px rgba(0, 0, 0, 0);
+  color: #ebdb00;
   z-index: 665; }
 
 h2 {
   padding: 10px 0 10px 0;
+  padding: 50px 0 30px 0;
   text-align: center;
-  color: red;
-  text-shadow: 5px 2px 5px black;
+  color: black;
+  text-shadow: 5px 2px 5px #afafaf;
   font-size: 1.8; }
 
 h3 {
@@ -154,11 +159,10 @@ a {
 
 .header {
   grid-area: header;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: justify;
-  overflow: hidden; }
+  height: 100px;
+  background-image: url(../img/pared.png);
+  background-position: top;
+  background-size: 100%; }
   .header .navbar {
     grid-area: navbar;
     position: fixed !important;
@@ -167,7 +171,7 @@ a {
     padding: 0 50px 0 0;
     z-index: 669;
     padding-top: 10px;
-    margin: -10px -10px 0 -10px; }
+    margin: 0 -10px 0 -10px; }
     .header .navbar .my_toggler {
       background-color: red; }
     .header .navbar .header__logo {
@@ -206,13 +210,15 @@ a {
 
 .main {
   grid-area: main;
-  padding: 6% 0 6% 0;
-  background-image: url(../img/Pared.jpg);
-  background-size: 100%;
+  padding: 0 0 6% 0;
+  background-image: url(../img/pared.png);
+  background-repeat: no-repeat;
+  background-size: 110%;
   background-position: bottom; }
   .main .bg-gradient {
     background-color: rgba(14, 87, 0, 0.534); }
   .main .main__Varios {
+    margin: 5% 0 5% 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -225,6 +231,13 @@ a {
   .main .main__subcripcion {
     padding-left: 30%;
     width: 70%; }
+  .main .main__carrousel {
+    padding: initial; }
+  .main aside {
+    background-color: rgba(42, 83, 0, 0.336);
+    border-radius: 15% 15% 0 0;
+    padding: 0 0 5% 0;
+    margin-top: 5%; }
   .main .productos ul {
     display: flex;
     justify-content: space-evenly; }
@@ -238,13 +251,17 @@ a {
         font-size: 1rem;
         cursor: pointer;
         position: relative; }
+  .main .fa-map-marked-alt {
+    color: red;
+    padding: 5% 0 10% 0; }
 
 .footer {
   grid-area: footer;
   background: linear-gradient(#001a07, transparent), linear-gradient(90deg, black, transparent), linear-gradient(-90deg, #585858, transparent);
   background-blend-mode: screen;
   height: 200px;
-  padding-top: 60px; }
+  padding-top: 60px;
+  text-decoration: none; }
   .footer .fab {
     margin: 20px 20px 30px 20px;
     filter: drop-shadow(0 2px 2px rgba(255, 195, 195, 0.7)); }
