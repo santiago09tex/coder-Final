@@ -1,0 +1,145 @@
+// cuerpo de la pagina
+
+.main {
+    grid-area: main;
+    padding: 0 0 6% 0;
+    background-image: url(../img/pared.png);
+    background-repeat: repeat-y;
+    background-size: 110%;
+    background-position: bottom;
+
+    .bg-gradient {
+        background-color: rgba(14, 87, 0, 0.534);
+    }
+
+    .main__Varios {
+        margin: 5% 0 5% 0;
+        @include caja-flex (row, wrap, space-evenly);
+
+        .main__productos {
+            background: $gradient;
+            border-radius: 60% 60% 10% 10%;
+            height: 100%;
+        }
+
+        .main__Borde {
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.822);
+
+        }
+
+    }
+
+    .main_img {
+        width: 40%;
+        margin: 5px;
+        border: 5px solid $color_b;
+    }
+
+    .main__subcripcion {
+        padding-left: $percent_30;
+        width: $percent_70;
+    }
+
+    .main__carrousel {
+        padding: initial;
+    }
+
+    .carrousel__medida {
+        height: 320px;
+    }
+
+    .main_card {
+        background: $gradient;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        margin: 10% 10%;
+        padding: 2%;
+        border-radius: 0 0 10% 10%;
+
+        .card__text {
+            font-size: 1.5rem;
+            align-items: center;
+            position: relative;
+            margin: 15%;
+            
+        }
+    }
+
+    aside {
+        background-color: rgba(42, 83, 0, 0.336);
+        border-radius: 15% 15% 0 0;
+        padding: 0 0 5% 0;
+        margin-top: 5%;
+    }
+
+    .productos {
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+
+            li {
+                list-style: none;
+                flex-direction: column;
+
+                a {
+                    align-items: center;
+                    text-decoration: none;
+                    font-style: oblique;
+                    font-size: $font_zise1;
+                    cursor: pointer;
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    #main__vacunos #main__aves #main__cerdo #main__embutidos {
+        @extend %formato-id
+    }
+
+    .fa-map-marked-alt {
+        color: $color_pr;
+        padding: 5% 0 10% 0;
+    }
+}
+
+// Footer --------------
+
+.footer {
+    grid-area: footer;
+    background:
+        $gradient2;
+    background-blend-mode: screen;
+    height: 200px;
+    padding-top: 40px;
+    text-decoration: none;
+
+
+    .fab {
+        margin: 20px 20px 20px 20px;
+        filter: drop-shadow(0 2px 2px rgba(255, 195, 195, 0.7));
+    }
+
+    .fa-facebook {
+        color: blue;
+    }
+
+    .fa-instagram {
+        color: $color_te;
+
+    }
+
+    .fa-youtube {
+        color: $color_pr;
+    }
+
+    .fa-whatsapp {
+        color: $color_se;
+    }
+
+    .fa-layer-group {
+        color: $color_te;
+    }
+}

@@ -1,0 +1,109 @@
+
+// cuerpo de html y imagenes
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $base_Font;
+} 
+
+html {
+  height: $percent_full;
+}
+
+body {
+  // padding: $font_zise1;
+  font-family: $base_Font;
+  min-height: $percent_full;
+}
+
+img {
+  width: 300px;
+    height: auto;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.712);
+    margin-bottom: 20px;
+    transition: 1.0s;
+}
+
+@mixin caja-flex($direction,$wrap,$justify){
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+}
+
+// boton productos
+.main__buttons {
+	color: #ffffff; /* Color del texto */
+	border-radius: 40%; /* Borde del boton */
+	background-color:$color_se; /* Color de fondo */
+	padding: 18px 20px; /* Relleno del boton */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+
+// titulos y subtitulos
+
+h1 {
+  @extend %formato-encabezado;
+  width: 100%;
+  position:relative;
+  text-align: center;
+  font-size: $font_zise1;
+  padding: 100px 0 0 0px !important;
+
+  // background-color: $color_se;
+  // color: rgb(219, 215, 0);
+  border-radius: 50px;
+  text-shadow: 2px 2px 0 #0f4d00, 2px -2px 0 #00471e, -2px 2px 0 #015e18, -2px -2px 0 #003600, 2px 0px 0 #000000, 0px 2px 0 #135a13, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5, 2px 2px 2px rgba(0,0,0,0);
+color: #ebdb00;
+  z-index: 665;
+}
+
+h2 {
+  @extend %formato-encabezado;
+  padding: $px_10 0 $px_10 0;
+  padding: 50px 0 30px 0;
+  text-align: center;
+  color: $color_b;
+  text-shadow: 5px 2px 5px rgb(175, 175, 175);
+  font-size: 1.8;
+}
+
+h3 {
+  @extend %formato-encabezado;
+  margin-bottom: $font_zise1;
+  font-style: oblique;
+  font-size: $font_zise3;
+  padding-top: $px_20;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, 2px 2px 2px rgba(206,0,0,0);
+}
+
+h4 {
+  @extend %formato-encabezado;
+  margin-bottom: $px_50;
+  text-shadow:initial;
+  color: $color_se;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, 2px 2px 2px rgba(206,0,0,0);
+}
+
+p {
+  @extend %formato-encabezado;
+  color: $color_te;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: $color_te;
+}
+
+ul {
+  list-style: none;
+}
