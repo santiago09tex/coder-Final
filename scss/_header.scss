@@ -1,0 +1,69 @@
+.header {
+    grid-area: header;
+    height:7.2rem;
+    background-image: url(../img/pared.png);
+    background-position: top;
+    background-size: 100%;
+
+    .navbar {
+        grid-area: navbar;
+        position:fixed !important;
+        background:
+            $gradient;
+        background-blend-mode: screen;
+        height:7.2rem;
+        padding: 0 $px_50 0 0;
+        z-index: 669;
+        padding-top: 10px;
+        margin: 0 -10px 0 -10px;
+
+        .my_toggler {
+            background-color: $color_pr;
+            
+        }
+
+        .header__logo {
+            width: 6%;
+            margin: 1% 0 0 5%;
+            border: 5px solid map-get($redscale, "200");
+            border-radius: $percent_70;
+            position: static;
+            float: left;
+
+        }
+        
+        li {
+            list-style: none;
+            margin-left: $px_20;
+
+            a {
+                align-items: center;
+                // border: solid 3px map-get($redscale, "300");
+                background-color: rgba(2, 113, 0, 0.212);
+                text-decoration: none;
+                font-style: oblique;
+                color: map-get($redscale, "200");
+                font-size: 1rem;
+                cursor: pointer;
+                margin: $px_10;
+                z-index: 1;
+                position: relative;
+                box-shadow: 0px 10px 30px -7px rgba(1,113,0,0.75);
+                -webkit-box-shadow: 0px 10px 30px -7px rgba(1,113,0,0.75);
+                -moz-box-shadow: 0px 10px 30px -7px rgba(1,113,0,0.75);
+
+                &:hover {
+                    background-color: $color_pr;
+                    border: solid 3px map-get($redscale, "200");
+                }
+            }
+        }
+    }
+    .carousel__my {
+        position: relative;
+    }
+}
+.navbar-toggler {
+    background-color: $color_se !important;
+    
+}

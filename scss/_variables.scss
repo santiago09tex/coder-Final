@@ -1,0 +1,100 @@
+// font Variables
+$base_Font:'Roboto Slab', serif,'Josefin Sans', sans-serif;
+$font_zise1: 1rem ;
+$font_zise2:1.8rem;
+$font_zise3: 1.9rem;
+$color_pr: red;
+$color_se: green;
+$color_te: white;
+$color_fo: blue;
+$color_b:black;
+
+// Color Variables
+
+$gradient:  linear-gradient(90deg,rgb(0, 0, 0),transparent),
+            linear-gradient(rgb(0, 0, 0),transparent);
+            
+$gradient2:  linear-gradient(rgb(0, 26, 7),transparent),
+            linear-gradient(90deg,rgb(0, 0, 0),transparent),
+            linear-gradient(-90deg,rgb(88, 88, 88),transparent);
+$gradient3:  linear-gradient(rgba(13, 184, 59, 0.308),transparent),
+linear-gradient(90deg,rgba(114, 114, 114, 0.548),transparent),
+linear-gradient(-90deg,rgba(88, 88, 88, 0.479),transparent);
+
+// Size Variables
+
+$percent_30:30%;
+$percent_50:50%;
+$percent_70:70%;
+$percent_full:100%;
+
+$px_10:10px;
+$px_20:20px;
+$px_30:30px;
+$px_50:50px;
+
+%formato-id {
+    padding: $px_50 0 $px_50 0;
+    text-shadow: 2px 2px 2px $color_b;
+  }
+
+%formato-encabezado {
+    color: $color_pr;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px $color_b;
+  }
+
+  %formato-icons {
+   
+  .fa-facebook {
+      color: blue;
+  }
+
+  .fa-instagram {
+      color: $color_te;
+      
+  }
+
+  .fa-youtube {
+      color: $color_pr;
+  }
+
+  .fa-whatsapp {
+      color: $color_se;
+  }
+  }
+
+// MAPS........................
+  $redscale:(
+      "100": #ebdb00,
+      "200": rgba(6, 179, 3, 0.75),
+      "300": #ffffff,
+      "400": #c20000,
+      "500": #9c0000,
+      "600": #7e0000,
+      "700": #5f0000,
+      "800": #3f0000,
+      "900": #330000
+);
+
+// EACH.........................
+$values:(
+$color_pr: red,
+$color_se: green,
+$color_te: white,
+$color_fo: blue,
+$color_b:black
+);
+
+@each $key,$value in $values{
+    .title-#{$key}{
+        color: #{$value};
+        &:hover {
+          color: #015e18
+        }
+    }
+    
+}
+
+        
