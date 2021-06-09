@@ -1,4 +1,4 @@
-.main #main__vacunos #main__aves #main__cerdo #main__embutidos {
+.main .main__Varios #main__vacunos #main__aves #main__cerdo #main__embutidos {
   padding: 50px 0 50px 0;
   text-shadow: 2px 2px 2px black; }
 
@@ -34,34 +34,34 @@ h1, h2, h3, h4, p {
     color: #015e18; }
 
 .spacer-10 {
-  border: 10px solid; }
+  padding: 10px; }
 
 .spacer-20 {
-  border: 20px solid; }
+  padding: 20px; }
 
 .spacer-30 {
-  border: 30px solid; }
+  padding: 30px; }
 
 .spacer-40 {
-  border: 40px solid; }
+  padding: 40px; }
 
 .spacer-50 {
-  border: 50px solid; }
+  padding: 50px; }
 
 .spacer-60 {
-  border: 60px solid; }
+  padding: 60px; }
 
 .spacer-70 {
-  border: 70px solid; }
+  padding: 70px; }
 
 .spacer-80 {
-  border: 80px solid; }
+  padding: 80px; }
 
 .spacer-90 {
-  border: 90px solid; }
+  padding: 90px; }
 
 .spacer-100 {
-  border: 100px solid; }
+  padding: 100px; }
 
 * {
   box-sizing: border-box;
@@ -243,50 +243,86 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly; }
-    .main .main__Varios .main__Borde {
-      border-radius: 50%;
-      border: 2px solid rgba(0, 0, 0, 0.822); }
-  .main .main_img {
-    width: 40%;
-    margin: 5px;
-    border: 5px solid black; }
-  .main .main__subcripcion {
-    padding-left: 30%;
-    width: 70%; }
-  .main .main__carrousel {
-    padding: initial; }
-  .main aside {
-    background-color: rgba(42, 83, 0, 0.336);
-    border-radius: 15% 15% 0 0;
-    padding: 0 0 5% 0;
-    margin-top: 5%; }
-  .main .productos ul {
-    display: flex;
-    justify-content: space-evenly; }
-    .main .productos ul li {
-      list-style: none;
-      flex-direction: column; }
-      .main .productos ul li a {
-        align-items: center;
-        text-decoration: none;
-        font-style: oblique;
-        font-size: 1rem;
-        cursor: pointer;
-        position: relative; }
-  .main .fa-map-marked-alt {
-    color: red;
-    padding: 5% 0 10% 0; }
-
-.footer {
-  grid-area: footer;
-  background: linear-gradient(#001a07, transparent), linear-gradient(90deg, black, transparent), linear-gradient(-90deg, #585858, transparent);
-  background-blend-mode: screen;
-  height: 200px;
-  padding-top: 60px;
-  text-decoration: none; }
-  .footer .fab {
-    margin: 20px 20px 30px 20px;
-    filter: drop-shadow(0 2px 2px rgba(255, 195, 195, 0.7)); }
+    .main .main__Varios .main__productos {
+      display: inline-flex;
+      flex-flow: column;
+      width: auto;
+      height: auto;
+      border-radius: 0% 0% 10% 10%;
+      background: linear-gradient(#001a07, transparent), linear-gradient(90deg, black, transparent), linear-gradient(-90deg, #585858, transparent);
+      padding-bottom: 5%; }
+      .main .main__Varios .main__productos .main__variante {
+        height: 100%;
+        position: absolute;
+        margin: 10% 0 0 3%;
+        transition-duration: 15s; }
+        .main .main__Varios .main__productos .main__variante:hover {
+          position: inherit;
+          opacity: initial;
+          transform: translate(0, 10px); }
+        .main .main__Varios .main__productos .main__variante img {
+          margin-top: 100px; }
+      .main .main__Varios .main__productos .main__Borde {
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 0, 0.822); }
+    .main .main__Varios .main_img {
+      width: 40%;
+      margin: 5px;
+      border: 5px solid black; }
+    .main .main__Varios .main__subcripcion {
+      padding-left: 30%;
+      width: 70%; }
+    .main .main__Varios .main__carrousel {
+      padding: initial; }
+    .main .main__Varios .main_card {
+      height: 50%;
+      margin: 5% 5%;
+      padding: 2%;
+      overflow: hidden; }
+      .main .main__Varios .main_card:hover {
+        background-color: linear-gradient(rgba(13, 184, 59, 0.308), transparent), linear-gradient(90deg, rgba(114, 114, 114, 0.548), transparent), linear-gradient(-90deg, rgba(88, 88, 88, 0.479), transparent);
+        position: sticky;
+        opacity: initial; }
+      .main .main__Varios .main_card .card__text {
+        width: 100%;
+        height: 50%;
+        font-size: 1.4rem;
+        position: absolute;
+        opacity: 0;
+        padding: 20% 10% 0 0; }
+        .main .main__Varios .main_card .card__text:hover {
+          opacity: initial; }
+    .main .main__Varios aside {
+      background-color: rgba(42, 83, 0, 0.336);
+      border-radius: 15% 15% 0 0;
+      padding: 0 0 5% 0;
+      margin-top: 5%; }
+    .main .main__Varios .productos ul {
+      display: flex;
+      justify-content: space-evenly; }
+      .main .main__Varios .productos ul li {
+        list-style: none;
+        flex-direction: column; }
+        .main .main__Varios .productos ul li a {
+          align-items: center;
+          text-decoration: none;
+          font-style: oblique;
+          font-size: 1rem;
+          cursor: pointer;
+          position: relative; }
+    .main .main__Varios .fa-map-marked-alt {
+      color: red;
+      padding: 5% 0 10% 0; }
+  .main .footer {
+    grid-area: footer;
+    background: linear-gradient(#001a07, transparent), linear-gradient(90deg, black, transparent), linear-gradient(-90deg, #585858, transparent);
+    background-blend-mode: screen;
+    height: 200px;
+    padding-top: 60px;
+    text-decoration: none; }
+    .main .footer .fab {
+      margin: 20px 20px 30px 20px;
+      filter: drop-shadow(0 2px 2px rgba(255, 195, 195, 0.7)); }
 
 /* Codigo del Formulario */
 @media (min-width: 700px) {
