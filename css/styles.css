@@ -262,6 +262,7 @@ ul {
   .main .carrousel__medida {
     height: 320px; }
   .main .main_card {
+<<<<<<< HEAD
     height: 50%;
     margin: 5% 5%;
     padding: 2%; }
@@ -272,6 +273,20 @@ ul {
       margin: 15%; }
       .main .main_card .card__text:hover {
         opacity: initial; }
+=======
+    background: linear-gradient(90deg, black, transparent), linear-gradient(black, transparent);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: 10% 10%;
+    padding: 2%;
+    border-radius: 0 0 10% 10%; }
+    .main .main_card .card__text {
+      font-size: 1.5rem;
+      align-items: center;
+      position: relative;
+      margin: 15%; }
+>>>>>>> feature/h&m
   .main aside {
     background-color: rgba(42, 83, 0, 0.336);
     border-radius: 15% 15% 0 0;
