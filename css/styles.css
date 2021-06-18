@@ -122,6 +122,21 @@ ul {
   grid-template: "header" 100px "navbar" 50px "main" auto "footer" 200px; }
 
 /* config Responsive */
+@media (max-width: 319px) {
+  .main .productos ul {
+    display: inline; }
+  img {
+    width: 200px; }
+  .header__logo {
+    width: 20%; }
+  video {
+    width: 200px; }
+  h1 {
+    position: absolute;
+    padding-left: 30%; }
+  .grid_container {
+    grid-template: "header header" 100px "main main" auto "footer  footer " 50px; } }
+
 @media (min-width: 320px) {
   .header__logo {
     height: 50%; }
