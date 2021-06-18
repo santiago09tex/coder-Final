@@ -123,8 +123,6 @@ ul {
 
 /* config Responsive */
 @media (max-width: 319px) {
-  .main .productos ul {
-    display: inline; }
   img {
     width: 200px; }
   .header__logo {
