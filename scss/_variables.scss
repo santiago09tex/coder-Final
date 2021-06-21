@@ -1,3 +1,5 @@
+
+
 // font Variables
 $base_Font:'Roboto Slab', serif,'Josefin Sans', sans-serif;
 $font_zise1: 1rem ;
@@ -8,6 +10,8 @@ $color_se: green;
 $color_te: white;
 $color_fo: blue;
 $color_b:black;
+
+
 
 // Color Variables
 
@@ -20,6 +24,8 @@ $gradient2:  linear-gradient(rgb(0, 26, 7),transparent),
 $gradient3:  linear-gradient(rgba(13, 184, 59, 0.308),transparent),
 linear-gradient(90deg,rgba(114, 114, 114, 0.548),transparent),
 linear-gradient(-90deg,rgba(88, 88, 88, 0.479),transparent);
+
+
 
 // Size Variables
 
@@ -65,6 +71,8 @@ $px_50:50px;
   }
   }
 
+
+
 // MAPS........................
   $redscale:(
       "100": #ebdb00,
@@ -77,6 +85,8 @@ $px_50:50px;
       "800": #3f0000,
       "900": #330000
 );
+
+
 
 // EACH.........................
 $values:(
