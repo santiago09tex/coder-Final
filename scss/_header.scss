@@ -1,3 +1,6 @@
+
+// Cabecera----------------
+
 .header {
     grid-area: header;
     height:7.2rem;
@@ -38,8 +41,7 @@
 
             a {
                 align-items: center;
-                // border: solid 3px map-get($redscale, "300");
-                background-color: rgba(2, 113, 0, 0.212);
+                background-color: rgba(2, 113, 0, 0.507);
                 text-decoration: none;
                 font-style: oblique;
                 color: map-get($redscale, "200");
@@ -48,12 +50,13 @@
                 margin: $px_10;
                 z-index: 1;
                 position: relative;
+                border-radius: 20%;
                 box-shadow: 0px 10px 30px -7px rgba(1,113,0,0.75);
                 -webkit-box-shadow: 0px 10px 30px -7px rgba(1,113,0,0.75);
                 -moz-box-shadow: 0px 10px 30px -7px rgba(1,113,0,0.75);
 
                 &:hover {
-                    background-color: $color_pr;
+                    background-color: $color_se;
                     border: solid 3px map-get($redscale, "200");
                 }
             }
