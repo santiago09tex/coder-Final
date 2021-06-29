@@ -1,4 +1,6 @@
-// cuerpo de la pagina
+
+
+// cuerpo de la pagina----------
 
 .main {
     grid-area: main;
@@ -108,7 +110,10 @@
     }
 }
 
+
+
 // Footer --------------
+
 
 .footer {
     grid-area: footer;
@@ -119,6 +124,7 @@
     padding-top: 40px;
     text-decoration: none;
 
+//  iconos  redes ---------------
 
     .fab {
         margin: 20px 20px 20px 20px;

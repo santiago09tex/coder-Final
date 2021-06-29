@@ -1,6 +1,7 @@
 
 
-// font Variables
+// font Variables...........
+
 $base_Font:'Roboto Slab', serif,'Josefin Sans', sans-serif;
 $font_zise1: 1rem ;
 $font_zise2:1.8rem;
@@ -13,7 +14,7 @@ $color_b:black;
 
 
 
-// Color Variables
+// Color Variables............
 
 $gradient:  linear-gradient(90deg,rgb(0, 0, 0),transparent),
             linear-gradient(rgb(0, 0, 0),transparent);
@@ -27,7 +28,7 @@ linear-gradient(-90deg,rgba(88, 88, 88, 0.479),transparent);
 
 
 
-// Size Variables
+// Size Variables............
 
 $percent_30:30%;
 $percent_50:50%;
@@ -38,6 +39,9 @@ $px_10:10px;
 $px_20:20px;
 $px_30:30px;
 $px_50:50px;
+
+
+// Extend..............
 
 %formato-id {
     padding: $px_50 0 $px_50 0;

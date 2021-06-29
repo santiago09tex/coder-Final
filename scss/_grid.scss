@@ -1,8 +1,13 @@
+
+// Estructura Grid de la pagina --------------
+
+
 .grid_container>* {
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 4px;
   text-align: center;
 }
+
 
 .grid_container {
   display: grid;
@@ -11,7 +16,10 @@
     "header"100px "navbar"50px "main"auto "footer"200px;
 }
 
+
+
 /* config Responsive */
+
 
 @media (max-width: 319px) {
   
@@ -37,6 +45,7 @@
   }
 }
 
+
 @media (min-width: 320px) {
 
   .header__logo {
@@ -57,6 +66,7 @@
       "header header"auto "main main"auto "footer  footer "50px
   }
 }
+
 
 @media screen and(min-width: 600px) {
 
@@ -82,6 +92,7 @@
       "header  header"auto "main    main"auto "footer  footer"50px
   }
 }
+
 
 @media screen and(min-width: 991px) {
 
