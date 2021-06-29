@@ -13,7 +13,7 @@
     }
 
     .main__Varios {
-        margin: 5% 0 5% 0;
+        margin: 5% 0 15% 0;
         @include caja-flex (row, wrap, space-evenly);
 
         .main__productos {

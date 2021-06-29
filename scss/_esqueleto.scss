@@ -69,6 +69,7 @@ color: #ebdb00;
 h2 {
   @extend %formato-encabezado;
   padding: 10px 0 30px 0;
+  
   text-align: center;
   color: $color_b;
   text-shadow: 5px 2px 5px rgb(175, 175, 175);

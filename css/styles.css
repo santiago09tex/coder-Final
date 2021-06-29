@@ -230,7 +230,7 @@ ul {
   .main .bg-gradient {
     background-color: rgba(14, 87, 0, 0.534); }
   .main .main__Varios {
-    margin: 5% 0 5% 0;
+    margin: 5% 0 15% 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
